@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: linear-gradient(to right, #a75e97, #19057d);">
+    <h1>Сайт Республики Бублония</h1>
+    <img src="flag.JPG" alt="" width="380px" height="200px" style="left: 10;">
+    <button onclick="pop.showModal()">Регистрация</button>
+    <dialog id="pop">
+        <button onclick="pop.close()">X</button>
+         <div class="box">
+            <h2>Регистрация</h2>
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Пароль" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Пароль должен содержать не менее 8 символов, включая заглавные и строчные буквы, а также цифры">
+            <button onclick="alert('функция в разработке')">Зарегистрироваться</button>
+         </div>
+    </dialog>
+     <link rel="stylesheet" href="style.css">
+    <div class="novosti">
+        <h1>Новости</h1>
+        <p>Здесь будут отображаться последние новости и обновления.</p>
+    </div>
+
+</body>
+ </html>
